@@ -1,0 +1,42 @@
+body > div {
+    border-color: white;
+    border-width: 15px;
+    border-style:solid;
+    background-color:white);
+}
+
+.los {
+    border-color: white;
+    border-radius: 25px;
+    border-style:solid;
+    border-width: 10px;
+    height: 56rem;
+    background-color: white;
+    
+    
+}
+
+.los2 {
+    border-color: white;
+    border-radius: 25px;
+    border-style:solid;
+    border-width: 10px;
+    height: 12rem;
+    background-color: white;
+    
+    
+}
+
+.losMain {
+    border-color: white;
+    border-radius: 25px;
+    border-style:solid;
+    border-width: 10px;
+    height: 32rem;
+    background-color: white;
+    
+}
+
+.datos{
+    height: 3.5em;
+}

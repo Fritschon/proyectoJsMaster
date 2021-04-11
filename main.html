@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link href="main2.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
+    <script defer src="main2.js"></script>
+    <title>ChileVid</title>
+</head>
+<body>
+    <div class="row">
+        
+        <div class="col-10">
+            <div class="row">
+                <div class="col-2 los2">
+                    
+                    <img src="https://imagenes.elpais.com/resizer/RDYHZKedZI1odVyXw94toabetbc=/1960x0/cloudfront-eu-central-1.images.arcpublishing.com/prisa/XOIM4P64KFHXNMRDFSD4MS5A7Q.png" class="card-img-top" alt="Foto" id="bandera">
+                </div>
+                <div class="col-4 los2" id="top"><h2>Seleccione un pais</h2>
+                    <div class="form-floating" id='uno'>
+                        <select class="form-select" aria-label="" id="selectorPais">
+                            <option value=""></option>
+                        </select>
+                        <label for="floatingSelect">pais</label>
+                    </div>
+
+                </div>
+                <div class="col-6 los2" id="top3">
+                    <h2><div id="nombreContinente">Algunos datos del Continente</div></h2>
+                    <div class="row">
+                        <div class="col-4 datos"><strong><h5>Poblacion</h5></strong><div id="poblacionContinente"></div></div>
+                        <div class="col-4 datos"><strong><h5>Confirmados</h5></strong><div id="confirmadosContinente"></div></div>
+                        <div class="col-4 datos"><strong><h5>Recuperados</h5></strong><div id="recuperadosContinente"></div></div>
+                        
+                    </div>
+                    <div class="row">
+                        <div class="col-3 datos"><strong><h5>Muertos</h5></strong><div id="muertosContinente"></div></div>
+                        <div class="col-3 datos"><strong><h5>Superficie</h5></strong><div id="km2Continente"></div></div>
+                        
+                    </div>
+                    
+
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-8 losMain"><h2>Comparacion Pais / Continente</h2>
+                    <div class="col-10"><canvas id="graficoLineas" class=""></canvas></div>
+                    
+                </div>
+            <div class="col-4 losMain"><h2>Poblacion por continente</h2>
+                <canvas id="graficoTorta"></canvas>
+            </div>
+            </div>
+            <div class="row">
+                <div class="col-12 los2" id="bot">
+                    <h2><div id="nombrepais">Algunos datos del Pais</div></h2>
+                    <div class="row">
+                        <div class="col-4 datos"><strong><h5>Poblacion</h5></strong><div id="poblacion"></div></div>
+                        <div class="col-4 datos"><strong><h5>Confirmados</h5></strong><div id="confirmados"></div></div>
+                        <div class="col-4 datos"><strong><h5>Recuperados</h5></strong><div id="recuperados"></div></div>
+                        
+                    </div>
+                    <div class="row">
+                        <div class="col-3 datos"><strong><h5>Muertos</h5></strong><div id="muertos"></div></div>
+                        <div class="col-3 datos"><strong><h5>Expectativa</h5></strong><div id="expectativa"></div></div>
+                        <div class="col-3 datos"><strong><h5>Capital</h5></strong><div id="capital"></div></div>
+                        <div class="col-3 datos"><strong><h5>Superficie</h5></strong><div id="km2"></div></div>
+                        
+                    </div></div>
+                
+                
+            </div>
+            
+        </div>
+        
+        <div class="col-2 los"><h2>Local Storage 
+            <button type="button" class="btn btn-primary" onClick="pueblaLocalStorage()">Traer datos</button>
+            <button type="button" class="btn btn-danger" onClick="limpiaLocalStorage()">Limpiar datos</button></h2>
+            <div id="localStorage"></div>
+        </div>
+        
+    </div>
+    
+</body>
+</html>
